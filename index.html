@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script>
+        function showInfo() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            if (firstName !== '') {
+                alert(firstName + ' ' + lastName);
+            }
+        }
+    </script>
+  </head>
+  <body style="background-color: aliceblue;">
+    <div style="background-color: white; width: 30rem; margin-left: 35%;">
+      <h1>Personal Detail</h1>
+      <div style="margin-bottom: 2rem">
+        <label style="color: red;">First Name : </label>
+        <input type="text" id="firstName"/>
+      </div>
+      <div style="margin-bottom: 2rem">
+        <label style="color: red;">Last Name : </label>
+        <input type="text" id="lastName"/>
+      </div>
+      <div>
+        <input type="submit" title="Submit" style="color: white; background-color: blue;" onclick="showInfo()">
+      </div>
+    </div>
+  </body>
+</html>
