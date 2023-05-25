@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <script>
+    <link rel="stylesheet" href="styels.css">
+    <script src="scripts.js"></script>
+    <!-- <script>
         function showInfo() {
             var firstName = document.getElementById('firstName').value;
             var lastName = document.getElementById('lastName').value;
@@ -13,21 +15,21 @@
                 alert(firstName + ' ' + lastName);
             }
         }
-    </script>
+    </script> -->
   </head>
-  <body style="background-color: aliceblue;">
-    <div style="background-color: white; width: 30rem; margin-left: 35%;">
+  <body class="body">
+    <div class="main-container">
       <h1>Personal Detail</h1>
-      <div style="margin-bottom: 2rem">
-        <label style="color: red;">First Name : </label>
+      <div class="label-area">
+        <label class="label-style">First Name : </label>
         <input type="text" id="firstName"/>
       </div>
-      <div style="margin-bottom: 2rem">
-        <label style="color: red;">Last Name : </label>
+      <div class="label-area">
+        <label class="label-style">Last Name : </label>
         <input type="text" id="lastName"/>
       </div>
       <div>
-        <input type="submit" title="Submit" style="color: white; background-color: blue;" onclick="showInfo()">
+        <input type="submit" title="Submit" class="btn-style" onclick="showInfo()">
       </div>
     </div>
   </body>

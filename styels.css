@@ -1,0 +1,18 @@
+.body {
+    background-color: aliceblue;
+
+    .main-container {
+        background-color: white;
+        width: 30rem; margin-left: 35%;
+    }
+    .label-area {
+        margin-bottom: 2rem;
+
+        .label-style {
+            color: red;
+        }
+    }
+    .btn-style {
+        color: white; background-color: blue;
+    }
+}
